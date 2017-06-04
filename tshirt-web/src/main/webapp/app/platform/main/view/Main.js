@@ -3,6 +3,7 @@
  */
 Ext.define('smapley.platform.main.view.Main',{
     extend:'Ext.panel.Panel',
+    controller:'mainController',
     items:[{
         xtype:'label',
         text:'werqwer',
