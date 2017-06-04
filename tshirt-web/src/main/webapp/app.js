@@ -14,5 +14,5 @@ Ext.application({
     ],
 
     // The name of the initial view to create.
-    mainView: 'smapley.base.main.view.Main'
+    mainView: 'smapley.platform.main.view.Main'
 });
