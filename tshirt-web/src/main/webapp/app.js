@@ -10,7 +10,7 @@ Ext.application({
     requires: [
         // This will automatically load all classes in the smapley namespace
         // so that application classes do not need to require each other.
-        'smapley.*'
+        'smapley.platform.main.view.Main'
     ],
 
     // The name of the initial view to create.

@@ -1,6 +1,7 @@
 $app-name:  dynamic( 'smapley' );
 $image-search-path: '/Users/wuzhixiong/Workspaces/IdeaProjects/tshirt/tshirt-web/src/main/webapp/build/development/smapley/classic/resources';
 $theme-name:  dynamic( 'theme-triton' );
+$include-admin-override-menu-item: dynamic(true);;
 $include-ext-abstractcomponent: dynamic(true);;
 $include-ext-abstractcontainer: dynamic(true);;
 $include-ext-abstractmanager: dynamic(true);;
@@ -933,8 +934,19 @@ $include-ext-window-messagebox: dynamic(true);;
 $include-ext-window-toast: dynamic(true);;
 $include-ext-window-window: dynamic(true);;
 $include-smapley-application: dynamic(true);;
-$include-smapley-base-main-view-maincontroller: dynamic(true);;
+$include-smapley-platform-authentication-view-authenticationcontroller: dynamic(true);;
 $include-smapley-platform-main-view-main: dynamic(true);;
+$include-smapley-platform-main-view-maincontroller: dynamic(true);;
+$include-smapley-platform-main-view-maintopview: dynamic(true);;
+$include-smapley-platform-main-view-mainviewmodel: dynamic(true);;
+$include-smapley-platform-menu-store-menustore: dynamic(true);;
+$include-smapley-platform-menu-view-menucontroller: dynamic(true);;
+$include-smapley-platform-menu-view-menuview: dynamic(true);;
+$include-smapley-platform-menu-view-menuviewmodel: dynamic(true);;
+$include-smapley-platform-pages-view-blankpage: dynamic(true);;
+$include-smapley-platform-pages-view-error404window: dynamic(true);;
+$include-smapley-platform-pages-view-error500window: dynamic(true);;
+$include-smapley-platform-pages-view-errorbase: dynamic(true);;
 $output-paths: ("path": "../../classic/resources", "shared": "../../resources");
 
 /* ======================== ETC ======================== */
@@ -994,6 +1006,22 @@ $current-package: 'theme-triton';
 $current-resource-root: $theme-triton-resource-root;
 $relative-image-path-for-uis: $theme-triton-resource-path;
 @import '../../../../../ext/classic/theme-triton/sass/etc/all';
+
+/* including package smapley */
+$smapley-resource-root: '' !default;
+$smapley-resource-path: 'images' !default;
+$current-package: false;
+$current-resource-root: $smapley-resource-root;
+$relative-image-path-for-uis: $smapley-resource-path;
+@import '../../../../../sass/etc/all';
+
+/* including package smapley */
+$smapley-resource-root: '' !default;
+$smapley-resource-path: 'images' !default;
+$current-package: false;
+$current-resource-root: $smapley-resource-root;
+$relative-image-path-for-uis: $smapley-resource-path;
+@import '../../../../../classic/sass/etc/all';
 
 
 /* ======================== VAR ======================== */
@@ -1171,6 +1199,31 @@ $relative-image-path-for-uis: $theme-triton-resource-path;
 @import '../../../../../ext/classic/theme-triton/sass/var/tab/Tab';
 @import '../../../../../ext/classic/theme-triton/sass/var/tab/Bar';
 @import '../../../../../ext/classic/theme-triton/sass/var/tree/View';
+
+/* including package smapley */
+$smapley-resource-root: '' !default;
+$smapley-resource-path: 'images' !default;
+$current-package: false;
+$current-resource-root: $smapley-resource-root;
+$relative-image-path-for-uis: $smapley-resource-path;
+@import '../../../../../sass/var/all';
+
+/* including package smapley */
+$smapley-resource-root: '' !default;
+$smapley-resource-path: 'images' !default;
+$current-package: false;
+$current-resource-root: $smapley-resource-root;
+$relative-image-path-for-uis: $smapley-resource-path;
+@import '../../../../../sass/var/platform/main/view/Main';
+
+/* including package smapley */
+$smapley-resource-root: '' !default;
+$smapley-resource-path: 'images' !default;
+$current-package: false;
+$current-resource-root: $smapley-resource-root;
+$relative-image-path-for-uis: $smapley-resource-path;
+@import '../../../../../classic/sass/var/platform/main/view/Main';
+@import '../../../../../classic/sass/var/platform/pages/view/BlankPage';
 
 
 /* ======================== RULE ======================== */
@@ -1386,3 +1439,22 @@ $current-package: false;
 $current-resource-root: $default-resource-root;
 $relative-image-path-for-uis: $default-resource-path;
 @import '../../../../../app/Application';
+
+/* including package smapley */
+$smapley-resource-root: '' !default;
+$smapley-resource-path: 'images' !default;
+$current-package: false;
+$current-resource-root: $smapley-resource-root;
+$relative-image-path-for-uis: $smapley-resource-path;
+@import '../../../../../sass/src/Application';
+@import '../../../../../sass/src/platform/main/view/Main';
+
+/* including package smapley */
+$smapley-resource-root: '' !default;
+$smapley-resource-path: 'images' !default;
+$current-package: false;
+$current-resource-root: $smapley-resource-root;
+$relative-image-path-for-uis: $smapley-resource-path;
+@import '../../../../../classic/sass/src/platform/main/view/Main';
+@import '../../../../../classic/sass/src/platform/pages/view/BlankPage';
+@import '../../../../../classic/sass/src/platform/pages/view/Error404Window';
